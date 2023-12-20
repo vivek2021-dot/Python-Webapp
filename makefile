@@ -1,6 +1,6 @@
 # Used by `image`, `push` & `deploy` targets, override as required
 IMAGE_REG ?= docker.io
-IMAGE_REPO ?= adijaiswal/python-webapp
+IMAGE_REPO ?= vivek/python-webapp
 IMAGE_TAG ?= latest
 
 # Used by `deploy` target, sets Azure webap defaults, override as required
@@ -9,7 +9,7 @@ AZURE_REGION ?= uksouth
 AZURE_SITE_NAME ?= pythonapp-$(shell git rev-parse --short HEAD)
 
 # Used by `test-api` target
-TEST_HOST ?= localhost:5000
+TEST_HOST ?= http://18.117.81.170:8080/
 
 # Don't change
 SRC_DIR := src
