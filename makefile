@@ -9,7 +9,7 @@ AZURE_REGION ?= uksouth
 AZURE_SITE_NAME ?= pythonapp-$(shell git rev-parse --short HEAD)
 
 # Used by `test-api` target
-TEST_HOST ?= http://54.212.41.69:8080/
+TEST_HOST ?= http://15.188.65.145:8080/
 
 # Don't change
 SRC_DIR := src
